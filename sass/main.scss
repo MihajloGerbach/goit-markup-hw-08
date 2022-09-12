@@ -1,0 +1,32 @@
+
+@import'./utils/variables';
+@import'./utils/mixin';
+
+@import'./base/normalize';
+@import'./base/reset';
+@import'./base/common';
+@import'./utils/hidden';
+
+@import'./components/container';
+@import'./components/title';
+@import'./components/btn';
+@import'./components/modal';
+
+
+    
+
+@import './layouts/header';
+@import './layouts/hero';
+@import './layouts/hang';
+@import './layouts/work';
+@import './layouts/team';
+@import './layouts/team-soc';
+@import './layouts/clients';
+@import './layouts/footer';
+@import './layouts/footer-adres';
+@import './layouts/footer-content';
+@import './layouts/footer-online';
+@import './layouts/filter';
+@import './layouts/cards';
+
+

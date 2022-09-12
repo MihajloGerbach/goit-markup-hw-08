@@ -1,0 +1,23 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--main-bg-color);
+    color: var(--main-font-color);
+
+ 
+    @include font();
+}
+
+.link,
+.text {
+    text-decoration: none;
+}
+
+.link {
+    display: block;
+}
+
+.list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
