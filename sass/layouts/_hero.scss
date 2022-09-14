@@ -51,10 +51,7 @@
  .hero-title {
      margin: 0 auto 30px;
      @include font(900, 26, 42, 0.06em);
-     /*font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
-  letter-spacing: 0.06em;*/
+     
      text-transform: uppercase;
      max-width: 360px;
      color: var(--main-light-color);
@@ -67,10 +64,7 @@
 
  .hero-button {
      @include font(700, 16, 30, 00.06em);
-     /*font-weight: 700;
-  font-size: 16px;
-  line-height: 1.88;
-  letter-spacing: 0.06em;*/
+    
      padding: 10px 32px;
      min-width: 216px;
      height: 50px;
