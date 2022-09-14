@@ -983,14 +983,17 @@ button {
   }
 }
 
-.mob-soc-link {
+.mob-soc-item {
   font-weight: 500;
   font-size: 12px;
   line-height: 1.3333333333;
   letter-spacing: 0.02em;
   color: var(--accent-color);
+  display: flex;
+  gap: 10px;
+  align-items: center;
 }
-.mob-soc-link:not(:last-child)::after {
+.mob-soc-item:not(:last-child)::after {
   content: " ";
   height: 22px;
   border-right: 1px solid rgba(33, 33, 33, 0.2);

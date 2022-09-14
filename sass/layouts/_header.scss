@@ -269,14 +269,15 @@
 
 }
 
-.mob-soc-link {
+.mob-soc-item {
     @include font(500, 12, 16, 0.02em);
     color: var(--accent-color);
-    
     &:not(:last-child)::after {
         content: " ";
         height: 22px;
         border-right: 1px solid rgba(33, 33, 33, 0.2);
     }
-   
+    display: flex;
+    gap: 10px;
+    align-items: ;
 }
