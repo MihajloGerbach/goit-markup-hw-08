@@ -29,331 +29,594 @@
     <!--шапка сайта-->
     <header class="page-header">
       <div class="container">
+        <a href="./index.html" class="link header-logo logo"><span class="web">Web</span>Studio</a>
         <nav class="page-nav">
-          <a href="./index.html" class="link header-logo logo"
-            ><span class="web">Web</span>Studio
-          </a>
           <ul class="nav list">
-            <li class="nav-item"><a href="./index.html" class="link nav-link">Studio</a></li>
-            <li>
-              <a href="./portfolio.html" class="link nav-link current"
-                >Portfolio
-                </a
-              >
+            <li class="nav-item">
+              <a href="./index.html" class="link nav-link current">Студия</a>
             </li>
-            <li class="nav-item"><a href="" class="link nav-link">Contacts</a></li>
+            <li class="nav-item">
+              <a href="./portfolio.html" class="link nav-link">Портфолио</a>
+            </li>
+            <li class="nav-item"><a href="" class="link nav-link">Контакты</a></li>
           </ul>
         </nav>
-
-        <!--наші контакти-->
-
+    
         <ul class="contact list">
-          <li class="contact-item" >
-           
-            <a href="mailto:info@devstudio.com" class="link contact-link"
-              ><svg class="header-icon" width="16" height="12">
+          <li class="contact-item">
+            <a href="mailto:info@devstudio.com" class="link contact-link"><svg class="header-icon" width="16" height="12">
                 <use href="./images/icons.svg#icon-envelope"></use>
               </svg>
               info@devstudio.com
             </a>
           </li>
           <li class="contact-item">
-           
-            <a href="tel:+380961111111" class="link contact-link"
-              ><svg class="header-icon" width="10" height="16">
+            <a href="tel:+380961111111" class="link contact-link">
+              <svg class="header-icon" width="10" height="16">
                 <use href="./images/icons.svg#icon-smartphone"></use>
               </svg>
               +38 096 111 11 11
             </a>
           </li>
         </ul>
+        <button type="button" class="menu-open-btn" data-menu-open>
+          <svg class="menu-mob-icon" width="24" height="16">
+            <use href="./images/icons.svg#icon-menu"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="mob-menu is-hidden" data-menu>
+        <div class="container">
+          <div class="mob-menu-top">
+            <button type="button" class="menu-close-btn" data-menu-close>
+              <svg class="close-mob-icon" width="18" height="18">
+                <use href="./images/icons.svg#icon-close"></use>
+              </svg>
+            </button>
+            <nav class="mob-nav">
+              <ul class="mob-nav list">
+                <li class="mob-nav-item">
+                  <a href="./index.html" class="link mob-nav-link current">Студия</a>
+                </li>
+                <li class="mob-nav-item">
+                  <a href="./portfolio.html" class="link mob-nav-link">Портфолио</a>
+                </li>
+                <li class="mob-nav-item"><a href="" class="link mob-nav-link">Контакты</a></li>
+              </ul>
+            </nav>
+          </div>
+    
+          <ul class="mob-contact list">
+            <li class="mob-contact-item">
+              <a href="tel:+380961111111" class="link mob-tel-link"> +38 096 111 11 11 </a>
+            </li>
+            <li class="mob-contact-item">
+              <a href="mailto:info@devstudio.com" class="link mob-contact-link">
+                info@devstudio.com
+              </a>
+            </li>
+          </ul>
+          <ul class="mob-soc list">
+            <li class="mob-soc-item">
+              <a href="" class="mob-soc-link link">Instagram</a>
+            </li>
+            <li class="mob-soc-item">
+              <a href="" class="mob-soc-link link">Twitter</a>
+            </li>
+            <li class="mob-soc-item">
+              <a href="" class="mob-soc-link link">Facebook</a>
+            </li>
+            <li class="mob-soc-item">
+              <a href="" class="mob-soc-link link">Linkedin</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
     <main>
       <!--Portfolio-->
-       <section class="section">
-          <div class="container">
-            <h1 class="visually-hidden">Portfolio</h1>
-           <!--Filter-button-->
-            <ul class="filter list">
-             <li>
-              <button class="button filter-button current" type="button">All</button>
-              </li>
-              <li>
-              <button class="button filter-button" type="button">Web-site</button>
-              </li>
-              <li>
+      <section class="section">
+        <div class="container">
+          <h1 class="visually-hidden">Portfolio</h1>
+          <!--Filter-button-->
+          <ul class="filter list">
+            <li>
+              <button class="button filter-button current" type="button">
+                All
+              </button>
+            </li>
+            <li>
+              <button class="button filter-button" type="button">
+                Web-site
+              </button>
+            </li>
+            <li>
               <button class="button filter-button" type="button">Apps</button>
-              </li>
-              <li>
+            </li>
+            <li>
               <button class="button filter-button" type="button">Design</button>
-              </li>
-              <li>
-              <button class="button filter-button" type="button">Marketing</button>
-              </li>
-            </ul>
-           <!--Cards-->
-             <ul class="cards list">
-               <li class="cards-item">
-                 <a href="" class="cards-link link" >
-                   <div class="cards-wrap">
-                     <img
-                     src="./images/port1.jpg"
-                      alt="ноутбук"
-                     width="370"
-                     height="294"
-                     />
-                     <p class="cards-top-text">
-                      Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати
-                      вичерпні відомості про компанію чи приватну особу.
-                      </p>
-                    </div>
-                  <div class="cards-foto">
-                   <h2 class="cards-title">Technoduck</h2>
-                   <p class="cards-text">Web-site</p>
-                   </div>
-                 </a>
-               </li>
-               <li class="cards-item">
-                 <a href="" class="cards-link link">
-                  <div class="cards-wrap">
-                   <img
-                   src="./images/port2.jpg"
-                   alt="баскетбол"
-                   width="370"
-                   height="294"
-                   />
-                  <p class="cards-top-text">
-                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати
-                    вичерпні відомості про компанію чи приватну особу.
-                  </p>
-                  </div>
-                   <div class="cards-foto">
-                   <h2 class="cards-title">Poster New Orlean vs Golden Star</h2>
-                   <p class="cards-text">Design</p>
-                   </div>
-                  </a>
-               </li>
-               <li class="cards-item">
-                  <a href="" class="cards-link link">
-                    <div class="cards-wrap">
-                    <img
-                   src="./images/port3.jpg"
-                   alt="борд"
-                    width="370"
-                    height="294"
-                   />
-                  <p class="cards-top-text">
-                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати
-                    вичерпні відомості про компанію чи приватну особу.
-                  </p>
-                  </div>
-                   <div class="cards-foto">
-                   <h2 class="cards-title">Seafood Restaurant</h2>
-                   <p class="cards-text">Apps</p>
-                   </div>
-                 </a>
-               </li>
-               <li class="cards-item">
-                 <a href="" class="cards-link link"
-                 >
+            </li>
+            <li>
+              <button class="button filter-button" type="button">
+                Marketing
+              </button>
+            </li>
+          </ul>
+          <!--Cards-->
+          <ul class="cards list">
+            <li class="cards-item">
+              <a href="" class="cards-link link">
                 <div class="cards-wrap">
-                 <img
-                 src="./images/port4.jpg"
-                 alt="навушники"
-                 width="370" 
-                 height="294"
-                 />
-                <p class="cards-top-text">
-                  Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати
-                  вичерпні відомості про компанію чи приватну особу.
-                </p>
-                </div>
-                 <div class="cards-foto">
-                 <h2 class="cards-title">Project Prime</h2>
-                 <p class="cards-text">Marketing</p>
-                 </div>
-                 </a>
-               </li>
-               <li class="cards-item">
-                 <a href="" class="cards-link link"
-                 >
-                <div class="cards-wrap">
-                 <img
-                 src="./images/port5.jpg"
-                 alt="коробки"
-                 width="370"
-                 height="294"
-                 />
-                <p class="cards-top-text">
-                  Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати
-                  вичерпні відомості про компанію чи приватну особу.
-                </p>
-                </div>
-                 <div class="cards-foto">
-                 <h2 class="cards-title">Project Boxes</h2>
-                 <p class="cards-text">Apps</p>
-                 </div>
-                 </a>
-              </li>
-              <li class="cards-item">
-                 <a href="" class="cards-link link"
-                 >
-                <div class="cards-wrap">
-                 <img
-                 src="./images/port6.jpg"
-                 alt="монітор"
-                 width="370"
-                 height="294"
-                 />
-                <p class="cards-top-text">
-                  Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати
-                  вичерпні відомості про компанію чи приватну особу.
-                </p>
-                </div>
-                 <div class="cards-foto">
-                 <h2 class="cards-title">Inspiration has no Borders</h2>
-                 <p class="cards-text">Web-site</p>
-                 </div>
-                </a>
-              </li>
-              <li class="cards-item">
-                 <a href="" class="cards-link link"
-                  >
-                  <div class="cards-wrap">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/port1-1x.jpg 1x,
+                        ./images/port1-2x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/port1-tabl-1x.jpg 1x,
+                        ./images/port1-tabl-2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/port1-mob-1x.jpg 1x,
+                        ./images/port1-mob-2x.jpg 2x
+                      "
+                      media="(min-width:480px)"
+                    />
+                  </picture>
                   <img
-                  src="./images/port7.jpg"
-                 alt="книга"
-                 width="370"
-                 height="294"
-                 />
-                <p class="cards-top-text">
-                  Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати
-                  вичерпні відомості про компанію чи приватну особу.
-                </p>
-                </div>
-                 <div class="cards-foto">
-                 <h2 class="cards-title">Limited Edition</h2>
-                 <p class="cards-text">Design</p>
-                 </div>
-                 </a>
-              </li>
-              <li class="cards-item">
-                <a href="" class="cards-link link"
-                 >
-                <div class="cards-wrap">
-                 <img
-                 src="./images/port8.jpg"
-                 alt="мітка"
-                 width="370"
-                 height="294"
-                 />
-                <p class="cards-top-text">
-                  Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати
-                  вичерпні відомості про компанію чи приватну особу.
-                </p>
+                    src="./images/port1-mob-1x.jpg"
+                    alt="ноутбук"
+                    width="450"
+                    height="294"
+                  />
+                  <p class="cards-top-text">
+                    Ресурс пропонує комплексні пропозиції з різним рівнем
+                    функціоналу та сервісів. Все це дозволить відвідувачу
+                    отримати вичерпні відомості про компанію чи приватну особу.
+                  </p>
                 </div>
                 <div class="cards-foto">
-                <h2 class="cards-title">Project LAB</h2>
-                <p class="cards-text">Marketing</p>
+                  <h2 class="cards-title">Technoduck</h2>
+                  <p class="cards-text">Web-site</p>
                 </div>
-                </a>
-              </li>
-              <li class="cards-item">
-               <a href="" class="cards-link link"
-                >
+              </a>
+            </li>
+            <li class="cards-item">
+              <a href="" class="cards-link link">
                 <div class="cards-wrap">
-                <img
-                src="./images/port9.jpg"
-                alt="ноутбук і руки"
-                width="370"
-                height="294"
-                />
-                <p class="cards-top-text">
-                  Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати
-                  вичерпні відомості про компанію чи приватну особу.
-                </p>
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/port2-1x.jpg 1x,
+                        ./images/port2-2x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/port2-tabl.jpg 1x,
+                        ./images/port2-tabl-2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/port2-mob-1x.jpg 1x,
+                        ./images/port2-mob-2x.jpg 2x
+                      "
+                      media="(min-width :480px)"
+                    />
+                  </picture>
+                  <img
+                    src="./images/port2-mob-1x.jpg"
+                    alt="баскетбол"
+                    width="450"
+                  />
+                  <p class="cards-top-text">
+                    Ресурс пропонує комплексні пропозиції з різним рівнем
+                    функціоналу та сервісів. Все це дозволить відвідувачу
+                    отримати вичерпні відомості про компанію чи приватну особу.
+                  </p>
                 </div>
-               <div class="cards-foto">
-               <h2 class="cards-title">Growing Business</h2>
-               <p class="cards-text">Apps</p>
-               </div>
-               </a>
-             </li>
-           </ul>
-         </div>
+                <div class="cards-foto">
+                  <h2 class="cards-title">Poster New Orlean vs Golden Star</h2>
+                  <p class="cards-text">Design</p>
+                </div>
+              </a>
+            </li>
+            <li class="cards-item">
+              <a href="" class="cards-link link">
+                <div class="cards-wrap">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/port3-1x.jpg 1x,
+                        ./images/port3-2x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/port3-tabl-1x.jpg 1x,
+                        ./images/port3-tabl-2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/port3-mob-1x.jpg 1x,
+                        ./images/port3-mob-2x.jpg 2x
+                      "
+                      media="(min-width: 480px)"
+                    />
+                  </picture>
+                  <img src="./images/port3-mob-1x.jpg" alt="борд" width="450" />
+                  <p class="cards-top-text">
+                    Ресурс пропонує комплексні пропозиції з різним рівнем
+                    функціоналу та сервісів. Все це дозволить відвідувачу
+                    отримати вичерпні відомості про компанію чи приватну особу.
+                  </p>
+                </div>
+                <div class="cards-foto">
+                  <h2 class="cards-title">Seafood Restaurant</h2>
+                  <p class="cards-text">Apps</p>
+                </div>
+              </a>
+            </li>
+            <li class="cards-item">
+              <a href="" class="cards-link link">
+                <div class="cards-wrap">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/port4-1x.jpg 1x,
+                        ./images/port4-2x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/port4-tabl-1x.jpg 1x,
+                        ./images/port4-tabl-2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/port4-mob-1x.jpg 1x,
+                        ./images/port4-mob-2x.jpg 2x
+                      "
+                      media="(min-width: 480px)"
+                    />
+                  </picture>
+                  <img
+                    src="./images/port4-mob-1x.jpg"
+                    alt="навушники"
+                    width="450"
+                  />
+                  <p class="cards-top-text">
+                    Ресурс пропонує комплексні пропозиції з різним рівнем
+                    функціоналу та сервісів. Все це дозволить відвідувачу
+                    отримати вичерпні відомості про компанію чи приватну особу.
+                  </p>
+                </div>
+                <div class="cards-foto">
+                  <h2 class="cards-title">Project Prime</h2>
+                  <p class="cards-text">Marketing</p>
+                </div>
+              </a>
+            </li>
+            <li class="cards-item">
+              <a href="" class="cards-link link">
+                <div class="cards-wrap">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/port5-1x.jpg 1x,
+                        ./images/port5-2x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/port5-tabl-1x.jpg 1x,
+                        ./images/port5-tabl-2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/port5-mob-1x.jpg 1x,
+                        ./images/port5-mob-2x.jpg 2x
+                      "
+                      media="(min-width: 480px)"
+                    />
+                  </picture>
+                  <img
+                    src="./images/port5-mob-1x.jpg"
+                    alt="коробки"
+                    width="450"
+                  />
+                  <p class="cards-top-text">
+                    Ресурс пропонує комплексні пропозиції з різним рівнем
+                    функціоналу та сервісів. Все це дозволить відвідувачу
+                    отримати вичерпні відомості про компанію чи приватну особу.
+                  </p>
+                </div>
+                <div class="cards-foto">
+                  <h2 class="cards-title">Project Boxes</h2>
+                  <p class="cards-text">Apps</p>
+                </div>
+              </a>
+            </li>
+            <li class="cards-item">
+              <a href="" class="cards-link link">
+                <div class="cards-wrap">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/port6-1x.jpg 1x,
+                        ./images/port6-2x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/port6-tabl-1x.jpg 1x,
+                        ./images/port6-tabl-2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/port6-mob-1x.jpg 1x,
+                        ./images/port6-mob-2x.jpg 2x
+                      "
+                      media="(min-width: 480px)"
+                    />
+                  </picture>
+                  <img
+                    src="./images/port6-mob-1x.jpg"
+                    alt="монітор"
+                    width="450"
+                  />
+                  <p class="cards-top-text">
+                    Ресурс пропонує комплексні пропозиції з різним рівнем
+                    функціоналу та сервісів. Все це дозволить відвідувачу
+                    отримати вичерпні відомості про компанію чи приватну особу.
+                  </p>
+                </div>
+                <div class="cards-foto">
+                  <h2 class="cards-title">Inspiration has no Borders</h2>
+                  <p class="cards-text">Web-site</p>
+                </div>
+              </a>
+            </li>
+            <li class="cards-item">
+              <a href="" class="cards-link link">
+                <div class="cards-wrap">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/port7-1x.jpg 1x,
+                        ./images/port6-7x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/port7-tabl-1x.jpg 1x,
+                        ./images/port7-tabl-2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/port7-mob-1x.jpg 1x,
+                        ./images/port7-mob-2x.jpg 2x
+                      "
+                      media="(min-width: 480px)"
+                    />
+                  </picture>
+                  <img
+                    src="./images/port7-mob-1x.jpg"
+                    alt="книга"
+                    width="450"
+                  />
+                  <p class="cards-top-text">
+                    Ресурс пропонує комплексні пропозиції з різним рівнем
+                    функціоналу та сервісів. Все це дозволить відвідувачу
+                    отримати вичерпні відомості про компанію чи приватну особу.
+                  </p>
+                </div>
+                <div class="cards-foto">
+                  <h2 class="cards-title">Limited Edition</h2>
+                  <p class="cards-text">Design</p>
+                </div>
+              </a>
+            </li>
+            <li class="cards-item">
+              <a href="" class="cards-link link">
+                <div class="cards-wrap">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/port8-1x.jpg 1x,
+                        ./images/port8-7x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/port8-tabl-1x.jpg 1x,
+                        ./images/port8-tabl-2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/port8-mob-1x.jpg 1x,
+                        ./images/port8-mob-2x.jpg 2x
+                      "
+                      media="(min-width: 480px)"
+                    />
+                  </picture>
+                  <img
+                    src="./images/port8-mob-1x.jpg"
+                    alt="мітка"
+                    width="450"
+                  />
+                  <p class="cards-top-text">
+                    Ресурс пропонує комплексні пропозиції з різним рівнем
+                    функціоналу та сервісів. Все це дозволить відвідувачу
+                    отримати вичерпні відомості про компанію чи приватну особу.
+                  </p>
+                </div>
+                <div class="cards-foto">
+                  <h2 class="cards-title">Project LAB</h2>
+                  <p class="cards-text">Marketing</p>
+                </div>
+              </a>
+            </li>
+            <li class="cards-item">
+              <a href="" class="cards-link link">
+                <div class="cards-wrap">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/port9-1x.jpg 1x,
+                        ./images/port9-7x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/port9-tabl-1x.jpg 1x,
+                        ./images/port9-tabl-2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/port9-mob-1x.jpg 1x,
+                        ./images/port9-mob-2x.jpg 2x
+                      "
+                      media="(min-width: 480px)"
+                    />
+                  </picture>
+                  <img
+                    src="./images/port9-mob-1x.jpg"
+                    alt="ноутбук і руки"
+                    width="450"
+                  />
+                  <p class="cards-top-text">
+                    Ресурс пропонує комплексні пропозиції з різним рівнем
+                    функціоналу та сервісів. Все це дозволить відвідувачу
+                    отримати вичерпні відомості про компанію чи приватну особу.
+                  </p>
+                </div>
+                <div class="cards-foto">
+                  <h2 class="cards-title">Growing Business</h2>
+                  <p class="cards-text">Apps</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
       </section>
     </main>
 
     <!--footer-->
-<footer class="footer">
-  <div class="container">
-    <div class="footer-adres">
-      <a href="./index.html" class="link footer-logo logo"><span class="web">Web</span><span
-          class="studio">Studio</span></a>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-adres">
+          <a href="./index.html" class="link footer-logo logo"
+            ><span class="web">Web</span><span class="studio">Studio</span></a
+          >
 
-      <address class="adres">
+          <address class="adres">
+            <ul class="list">
+              <li class="adres-link">
+                <a
+                  href="https://goo.gl/maps/yUVeJcE8cnbFfDTF8"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="text"
+                  >м. Київ, пр-т Лесі Українки, 26</a
+                >
+              </li>
+              <li class="adres-link">
+                <a href="mailto:info@example.com" class="link adres-mail"
+                  >info@example.com</a
+                >
+              </li>
+              <li class="adres-link">
+                <a href="tel:+380991111111" class="link adres-tel"
+                  >+38 099 111 11 11</a
+                >
+              </li>
+            </ul>
+          </address>
+        </div>
+        <div class="footer-content">
+          <h3 class="title footer-title">приєднуйтесь</h3>
+          <ul class="footer-soc list">
+            <li class="footer-soc-item">
+              <a href="" class="footer-soc-link link">
+                <svg class="footer-soc-icon" width="20" height="20">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-soc-item">
+              <a href="" class="footer-soc-link link">
+                <svg class="footer-soc-icon" width="20" height="20">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-soc-item">
+              <a href="" class="footer-soc-link link">
+                <svg class="footer-soc-icon" width="20" height="20">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-soc-item">
+              <a href="" class="footer-soc-link link">
+                <svg class="footer-soc-icon" width="20" height="20">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-online">
+          <h3 class="title footer-title">підпишись на розсилку</h3>
+          <form class="footer-form">
+            <input
+              type="email"
+              class="online-input"
+              name="online-email"
+              placeholder="E-mail"
+            />
 
-        <ul class="list">
-          <li class="adres-link">
-            <a href="https://goo.gl/maps/yUVeJcE8cnbFfDTF8" target="_blank" rel="noopener noreferrer" class="text">м.
-              Київ, пр-т Лесі Українки, 26</a>
-          </li>
-          <li class="adres-link">
-            <a href="mailto:info@example.com" class="link adres-mail">info@example.com</a>
-          </li>
-          <li class="adres-link">
-            <a href="tel:+380991111111" class="link adres-tel">+38 099 111 11 11</a>
-          </li>
-        </ul>
-      </address>
-    </div>
-    <div class="footer-content">
-      <h3 class="title footer-title">приєднуйтесь</h3>
-      <ul class="footer-soc list">
-        <li class="footer-soc-item">
-          <a href="" class="footer-soc-link link">
-            <svg class="footer-soc-icon" width="20" height="20">
-              <use href="./images/icons.svg#icon-instagram"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="footer-soc-item">
-          <a href="" class="footer-soc-link link">
-            <svg class="footer-soc-icon" width="20" height="20">
-              <use href="./images/icons.svg#icon-twitter"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="footer-soc-item">
-          <a href="" class="footer-soc-link link">
-            <svg class="footer-soc-icon" width="20" height="20">
-              <use href="./images/icons.svg#icon-facebook"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="footer-soc-item">
-          <a href="" class="footer-soc-link link">
-            <svg class="footer-soc-icon" width="20" height="20">
-              <use href="./images/icons.svg#icon-linkedin"></use>
-            </svg>
-          </a>
-        </li>
-      </ul>
-    </div>
-    <div class="footer-online">
-      <h3 class="title footer-title">підпишись на розсилку</h3>
-      <form class="footer-form">
-        <input type="email" class="online-input" name="online-email" placeholder="E-mail">
-      
-        <button type="submit" class="button online-button">Підписатися
-          <svg class="footer-send-icon" width="24" height="24">
-            <use href="./images/icons.svg#icon-send"></use>
-          </svg>
-        </button>
-      </form>
-    </div>
-  </div>
-</footer>
+            <button type="submit" class="button online-button">
+              Підписатися
+              <svg class="footer-send-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-send"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
