@@ -726,13 +726,22 @@ button {
 .header-logo {
   padding-top: 24px;
   padding-bottom: 25px;
-  margin-right: 93px;
 }
 @media screen and (max-width: 767px) {
   .header-logo {
     padding-top: 15px;
     padding-bottom: 16px;
     margin-right: 0px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .header-logo {
+    margin-right: 88;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .header-logo {
+    margin-right: 93px;
   }
 }
 
@@ -833,10 +842,6 @@ button {
   font-size: 14px;
   line-height: 1.1428571429;
   letter-spacing: 0.02em;
-  /*font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;*/
   transition: color 250ms var(--timing-function);
   text-transform: capitalize;
   color: var(--secondory-font-color);
@@ -991,7 +996,7 @@ button {
   color: var(--accent-color);
   display: flex;
   gap: 10px;
-  align-items: center;
+  align-items: 22px;
 }
 .mob-soc-item:not(:last-child)::after {
   content: " ";
