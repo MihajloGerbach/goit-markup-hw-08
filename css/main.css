@@ -704,6 +704,7 @@ button {
   display: none;
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 @media screen and (min-width: 1200px) {
   .page-header .container {
@@ -734,12 +735,12 @@ button {
     margin-right: 0px;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) {
   .header-logo {
-    margin-right: 88;
+    margin-right: 60px;
   }
 }
-@media screen and (max-width: 1200px) {
+@media screen and (min-width: 1200px) {
   .header-logo {
     margin-right: 93px;
   }
@@ -781,9 +782,10 @@ button {
   display: none;
   margin-left: auto;
 }
-@media screen and (min-width: 780px) {
+@media screen and (min-width: 768px) {
   .contact {
     display: block;
+    margin-left: 60px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -988,7 +990,7 @@ button {
   }
 }
 
-.mob-soc-item {
+.mob-soc-link {
   font-weight: 500;
   font-size: 12px;
   line-height: 1.3333333333;
@@ -996,9 +998,8 @@ button {
   color: var(--accent-color);
   display: flex;
   gap: 10px;
-  align-items: 22px;
 }
-.mob-soc-item:not(:last-child)::after {
+.mob-soc-link:not(:last-child)::after {
   content: " ";
   height: 22px;
   border-right: 1px solid rgba(33, 33, 33, 0.2);

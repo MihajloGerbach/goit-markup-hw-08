@@ -6,6 +6,7 @@
         display: none;
         display: flex;
         align-items: center;
+        justify-content: space-between;
 
         @media screen and (min-width: 1200px) {
             display: block;
@@ -30,10 +31,10 @@
         padding-bottom: 16px;
         margin-right: 0px;
     }
-@media screen and (max-width: 768px) {
-   margin-right: 88;
+@media screen and (min-width: 768px) {
+   margin-right: 60px;
 }
-@media screen and (max-width: 1200px) {
+@media screen and (min-width: 1200px) {
     margin-right: 93px;
 }
     padding-top: 24px;
@@ -71,8 +72,9 @@
     display: none;
     margin-left: auto;
 
-    @media screen and (min-width: 780px) {
+    @media screen and (min-width: 768px) {
         display: block;
+        margin-left: 60px;
     }
 
     @media screen and (min-width: 1200px) {
@@ -271,7 +273,7 @@
 
 }
 
-.mob-soc-item {
+.mob-soc-link {
     @include font(500, 12, 16, 0.02em);
     color: var(--accent-color);
     &:not(:last-child)::after {
@@ -281,5 +283,5 @@
     }
     display: flex;
     gap: 10px;
-    align-items: 22px;
+    
 }
