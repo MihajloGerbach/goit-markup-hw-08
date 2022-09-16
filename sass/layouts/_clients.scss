@@ -2,15 +2,23 @@
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
+    
 }
 
 .clients-item {
-    @media screen and (max-width: 767px) {
+    
+    
+
+    
         width: calc((100% - 30px) / 2);
-    }
+    
+        height: 92px;
+    
 
     @media screen and (min-width: 768px) {
-        width: calc((100% - 90px) / 3);
+        width: calc((100% - 60px) / 3);
+
+        height: 92px;
     }
 
     @media screen and (min-width: 1200px) {

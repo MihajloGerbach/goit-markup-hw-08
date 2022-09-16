@@ -15,7 +15,7 @@
      background-position: center;
 
      @media screen and (min-width: 768px) {
-         width: 768px;
+        width: 100%;
          background-image: var(--bg-gradient), url('../images/hero-tabl.jpg');
 
          @include retina {
@@ -23,16 +23,18 @@
          }
      }
 
-     @media screen and (min-width: 1200px) {
+     @media screen and (min-width: 1200px)  {
          background-image: var(--bg-gradient), url('../images/hero.jpg');
 
          @include retina {
              background-image: var(--bg-gradient), url('../images/hero-2x.jpg');
          }
-
-         width: 1200px;
+         width: 100%;
          max-width: 1600px;
          height: 600px;
+                 background-repeat: no-repeat;
+                 background-size: cover;
+                 background-position: center;
      }
  }
 
