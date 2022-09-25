@@ -83,6 +83,13 @@
         gap: 50px;
     }
 }
+ @media screen and (min-width: 768px) and (max-width: 1199px) {
+     .contact-item:not(:last-child) {
+        margin-bottom: 10px;
+
+     }
+
+ }
 
 .header-icon {
     fill: currentColor;
@@ -95,8 +102,11 @@
 }
 
 .contact-link {
+    display: flex;
+        gap: 10px;
+        align-items: center;
     @include font(500, 12, 14, 0.02em);
-    padding-bottom: 10px;
+    
     transition: fill 250ms var(--timing-function);
     transition: color 250ms var(--timing-function);
     color: var(--main-font-color);
@@ -107,9 +117,6 @@
     }
 
     @media screen and (min-width: 1200px) {
-        display: flex;
-        gap: 10px;
-        align-items: center;
 
         padding-top: 32px;
         padding-bottom: 32px;
@@ -192,16 +199,18 @@
     left: 0;
     width: 100vw;
     height: 100vh;
-    padding-top: 21px;
-    padding-bottom: 48px;
+   
+   
 
-    >.container {
+    .mob-menu-container {
         height: 100%;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         align-items: flex-start;
         padding-left: 40px;
+        padding-top: 21px;
+        padding-bottom: 48px;
     }
 
     @media screen and (min-width: 768px) {
@@ -265,29 +274,39 @@
 
 .mob-soc {
     display: flex;
-    gap: 20px;
+    gap: 10px;
     @media screen and (max-width: 479px) {
-        gap: 10px;
+        gap: 5px;
 
     
     }
     
+
+}
+.mob-soc-item {
+    display: flex;
+    column-gap: 10px;
+    @media screen and (max-width: 479px) {
+            column-gap: 5px;
+        }
+    
+
+    &:not(:last-child)::after {
+            content: "";
+            height: 22px;
+            border-right: 1px solid rgba(33, 33, 33, 0.2);
+        }
+        
 
 }
 
 .mob-soc-link {
     @include font(500, 18, 22, 0.02em);
     color: var(--accent-color);
+
+        
     @media screen and (max-width: 479px){
         @include font(500, 14, 18, 0.02em);
     }
 
-    &:not(:last-child)::after {
-        content: " ";
-        height: 22px;
-        border-right: 1px solid rgba(33, 33, 33, 0.2);
-    }
-    display: flex;
-    gap: 10px;
-    
-}
+        }

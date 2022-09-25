@@ -447,12 +447,20 @@ body {
 
 .section-title {
   margin-top: 0;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.1666666667;
+  font-size: 28px;
+  line-height: 1.1785714286;
   text-align: center;
   color: var(--secondory-font-color);
+}
+@media screen and (min-width: 1200px) {
+  .section-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.1666666667;
+    margin-bottom: 50px;
+  }
 }
 
 button {
@@ -474,7 +482,6 @@ button {
 .modal {
   position: absolute;
   width: 100%;
-  height: 100%;
   background: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
@@ -642,6 +649,14 @@ button {
     letter-spacing: 0.03em;
   }
 }
+@media screen and (max-width: 479px) {
+  .check-text {
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 1.4;
+    letter-spacing: 0.03em;
+  }
+}
 .check-text span {
   width: 16px;
   height: 15px;
@@ -795,6 +810,11 @@ button {
   }
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .contact-item:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
 .header-icon {
   fill: currentColor;
   transition: fill 250ms var(--timing-function);
@@ -804,11 +824,13 @@ button {
 }
 
 .contact-link {
+  display: flex;
+  gap: 10px;
+  align-items: center;
   font-weight: 500;
   font-size: 12px;
   line-height: 1.1666666667;
   letter-spacing: 0.02em;
-  padding-bottom: 10px;
   transition: fill 250ms var(--timing-function);
   transition: color 250ms var(--timing-function);
   color: var(--main-font-color);
@@ -818,9 +840,6 @@ button {
 }
 @media screen and (min-width: 1200px) {
   .contact-link {
-    display: flex;
-    gap: 10px;
-    align-items: center;
     padding-top: 32px;
     padding-bottom: 32px;
     font-weight: 500;
@@ -898,16 +917,16 @@ button {
   left: 0;
   width: 100vw;
   height: 100vh;
-  padding-top: 21px;
-  padding-bottom: 48px;
 }
-.mob-menu > .container {
+.mob-menu .mob-menu-container {
   height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
   padding-left: 40px;
+  padding-top: 21px;
+  padding-bottom: 48px;
 }
 @media screen and (min-width: 768px) {
   .mob-menu {
@@ -982,12 +1001,29 @@ button {
 
 .mob-soc {
   display: flex;
-  gap: 20px;
+  gap: 10px;
 }
 @media screen and (max-width: 479px) {
   .mob-soc {
-    gap: 10px;
+    gap: 5px;
   }
+}
+
+.mob-soc-item {
+  display: flex;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+}
+@media screen and (max-width: 479px) {
+  .mob-soc-item {
+    -moz-column-gap: 5px;
+         column-gap: 5px;
+  }
+}
+.mob-soc-item:not(:last-child)::after {
+  content: "";
+  height: 22px;
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
 }
 
 .mob-soc-link {
@@ -996,8 +1032,6 @@ button {
   line-height: 1.2222222222;
   letter-spacing: 0.02em;
   color: var(--accent-color);
-  display: flex;
-  gap: 10px;
 }
 @media screen and (max-width: 479px) {
   .mob-soc-link {
@@ -1006,11 +1040,6 @@ button {
     line-height: 1.2857142857;
     letter-spacing: 0.02em;
   }
-}
-.mob-soc-link:not(:last-child)::after {
-  content: " ";
-  height: 22px;
-  border-right: 1px solid rgba(33, 33, 33, 0.2);
 }
 
 .overlay {
@@ -1213,6 +1242,7 @@ button {
   letter-spacing: 0.03em;
   font-weight: 500;
   text-align: center;
+  margin-top: 0px;
   margin-bottom: 10px;
   color: #212121;
 }
@@ -1229,7 +1259,6 @@ button {
 
 .title-team {
   padding: 30px 20px;
-  background-color: var(--main-light-color);
 }
 
 .team-item {
@@ -1623,8 +1652,8 @@ button {
 
 .filter-button {
   font-weight: 500;
-  font-size: 18px;
-  line-height: 1.4444444444;
+  font-size: 16px;
+  line-height: 1.625;
   letter-spacing: 0.03em;
   text-align: center;
   padding: 6px 22px;
@@ -1689,14 +1718,17 @@ button {
   font-size: 18px;
   line-height: 1.5555555556;
   letter-spacing: 0.03em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: var(--main-bg-color);
   background-color: rgba(33, 150, 243, 0.9);
   margin: 0;
-  padding: 63px 24px;
+  padding: 0px 24px;
   transform: translateY(100%);
   transition: transform 250ms var(--timing-function);
 }
-.cards-item:hover .cards-top-text {
+.cards-link:hover .cards-top-text {
   transform: translateY(0);
 }
 .cards-foto {
