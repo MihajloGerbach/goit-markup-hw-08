@@ -40,4 +40,9 @@
     color: var(--main-light-color);
     margin: 0;
     margin-bottom: 20px;
+    @media screen and (max-width: 479px) {
+    
+            @include font (700, 12, 14, null);
+    
+}
 }

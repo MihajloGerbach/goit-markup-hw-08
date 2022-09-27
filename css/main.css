@@ -463,6 +463,15 @@ body {
   }
 }
 
+.title {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.1428571429;
+  color: var(--secondory-font-color);
+}
+
 button {
   border: transparent;
   cursor: pointer;
@@ -1409,6 +1418,13 @@ button {
   margin: 0;
   margin-bottom: 20px;
 }
+@media screen and (max-width: 479px) {
+  .footer-title {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 1.1666666667;
+  }
+}
 
 @media screen and (max-width: 767px) {
   .footer-adres {
@@ -1604,7 +1620,6 @@ button {
   padding-right: 62px;
   width: 200px;
   height: 50px;
-  margin-left: 12px;
   border-radius: 4px;
   background-color: var(--accent-color);
   color: var(--main-light-color);
@@ -1652,8 +1667,8 @@ button {
 
 .filter-button {
   font-weight: 500;
-  font-size: 16px;
-  line-height: 1.625;
+  font-size: 18px;
+  line-height: 1.4444444444;
   letter-spacing: 0.03em;
   text-align: center;
   padding: 6px 22px;
@@ -1721,12 +1736,21 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
   color: var(--main-bg-color);
   background-color: rgba(33, 150, 243, 0.9);
   margin: 0;
   padding: 0px 24px;
   transform: translateY(100%);
   transition: transform 250ms var(--timing-function);
+}
+@media screen and (max-width: 369px) {
+  .cards-top-text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7142857143;
+    letter-spacing: 0.03em;
+  }
 }
 .cards-link:hover .cards-top-text {
   transform: translateY(0);

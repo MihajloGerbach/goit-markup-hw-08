@@ -12,3 +12,10 @@
      margin-bottom: 50px;
  }
  }
+ .title {
+     margin-top: 0;
+     margin-bottom: 20px;
+     @include font(700, 14, 16, null);
+ 
+     color: var(--secondory-font-color);
+ }
